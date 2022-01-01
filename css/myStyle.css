@@ -138,14 +138,15 @@ cursor: pointer;
 .project-card>a>span{color:#f79fde;margin: 5%;display: block;font-weight: 500;}
 
 .project-card div{
-    position: absolute;
-    bottom: 0;
+    
     background: #c4a1ba;
     background: -moz-linear-gradient(left,  #c4a1ba 2%, #f79fde 42%, #f4cde9 53%, #f79fde 62%, #f79fde 62%, #ce96bd 100%, #f79fde 100%);
     background: -webkit-linear-gradient(left,  #c4a1ba 2%,#f79fde 42%,#f4cde9 53%,#f79fde 62%,#f79fde 62%,#ce96bd 100%,#f79fde 100%);
     background: linear-gradient(to right,  #c4a1ba 2%,#f79fde 42%,#f4cde9 53%,#f79fde 62%,#f79fde 62%,#ce96bd 100%,#f79fde 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4a1ba', endColorstr='#f79fde',GradientType=1 );
     color: #645763;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 100%;
     transition: 0.5s ease;
@@ -182,11 +183,11 @@ border-radius: 0.7em;
 
 /*-------------------end project ------------------*/
 /*--------------contact ------------*/
-.Contact{height: 33em;
+.Contact{
     background: -webkit-linear-gradient(left,#f79fde, #e7c6de);
     background-color: #f79fde;padding-top: 0.2%;}
 .Con-header{
-    font-size: 3em;
+
     color: #f1f1f1;
     text-shadow: 0.2em 0em 0.3em #ca299a;
     font-weight: 600;
@@ -233,11 +234,12 @@ border-radius: 0.7em;
    ;}
 .container-fluid{width: 97%;}
 .MyName , .EduHaeader{font-size: 5em;}
-
+.Contact{height: 33em;}
+.Con-header{    font-size: 3em;}
 }
 
 @media (max-width:575px){
-.project .card{width: 33.3333%; display: block; margin:7.5% 33.3333%;height: 12em;}
+.project .project-card{width: 33.3333%; display: block; margin:7.5% 33.3333%;height: 12em;}
 .Contact{height: auto;padding: 4%;}
 .Contact>.row>div>a{box-shadow: 0em 0em 0em #835e7a00;background-color: transparent;width: 10%;}
 .Contact>.row>div{display: inline;width: 20%;}
@@ -245,6 +247,7 @@ border-radius: 0.7em;
 .Contact>.row>div>a>span{display: none;}
 .Contact>.row>div>a{font-size: 2em;}
 .MyName , .EduHaeader , .ProHeader{font-size: 2.5em;}
+
 }
 @media (min-width:1200){
 .EduHaeader{color: #f79fde;}
@@ -258,7 +261,7 @@ border-radius: 0.7em;
     .SectionMyName{height: 40em;}
     #scroll-top{padding: 0.3em 0.5em;}
     .Education{
-        height: 35em;
+        height: 30em;
         background-color: transparent;
         color: #f79fde;
         text-shadow: -0.03em 0em 0.1em rgb(131, 94, 122);

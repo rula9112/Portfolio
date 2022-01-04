@@ -1,5 +1,11 @@
 /*===================================================================index==============================================================*/
-body{background-color:  #ca299a;  font-family: cursive;}
+body{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcecfc+0,fba6e1+50,fd89d7+51,ff7cd8+100;Pink+Gloss+%232 */
+    background: #fcecfc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      font-family: sans-serif;}
 /******************* navbar***********/
 
 .navbar{
@@ -15,21 +21,26 @@ body{background-color:  #ca299a;  font-family: cursive;}
     transition: 0.5s ease;
     text-decoration: none;
  }
- .icon-bar{color: #f79fde;font-weight: 800;}
 /*--------------end navbar ------------*/
+
+/*-------------footer -----------------------*/
+
+
 footer {
     color: #f1f1f1;
     font-size: 0.7em;
     background-color: transparent;
     padding: 0.8%;
 }
+
+/*--------------end footer -------------*/
 /*-------------------top scroll---------------*/
 #scroll-top{
     background-color:#f79fde9c ;
-    border: 0.1em solid #ce96bdc9;
+    border: 0.1em solid #ce96bda1;
     color:#645763 ;
-    border-radius: 100%;
-padding: 0.3% 0.8%;
+    border-radius: 0.5em;
+padding: 0.3% 0.5%;
 font-size: 2em;
 position: fixed;
 bottom: 10%;
@@ -40,20 +51,20 @@ cursor: pointer;
 }
 #scroll-top:hover{
     background-color:#64576388 ;
-    border: 0.08em solid #493e48c7;
+    border: 0.08em solid #493e48a9;
     color:#f79fde;
     box-shadow: 0em 0em 0.5em 645763;
 }
 /*----------------------end top scroll-------------*/
 /*----------------myname section --------------------*/
 .container-fluid{
-    padding: 0;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#645763+0,352c34+100 */
-    background: #645763; /* Old browsers */
-    background: -moz-linear-gradient(left,  rgba(100,87,99,1) 0%, rgba(53,44,52,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(100,87,99,1) 0%,rgba(53,44,52,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(100,87,99,1) 0%,rgba(53,44,52,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#645763', endColorstr='#352c34',GradientType=1 ); /* IE6-9 */
-    box-sizing: border-box;
+    padding: 0;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: #835e7a; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #835e7a 0%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #835e7a 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #835e7a 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#835e7a', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     box-sizing: border-box;
     box-shadow: 0em 0em 1.8em #1a191a;}
 
 
@@ -162,7 +173,7 @@ cursor: pointer;
 
 .project-card div:hover{
     color: #f79fde;
-    background: #645763;
+    background: #352c34;
 background: -moz-linear-gradient(left,  #645763 2%, #9c8897 42%, #c4a1ba 53%, #9c8897 68%, #9c8897 68%, #645763 100%, #f79fde 100%);
 background: -webkit-linear-gradient(left,  #645763 2%,#9c8897 42%,#c4a1ba 53%,#9c8897 68%,#9c8897 68%,#645763 100%,#f79fde 100%);
 background: linear-gradient(to right,  #645763 2%,#9c8897 42%,#c4a1ba 53%,#9c8897 68%,#9c8897 68%,#645763 100%,#f79fde 100%);
@@ -185,7 +196,7 @@ border-radius: 0.7em;
 /*--------------contact ------------*/
 .Contact{
     background: -webkit-linear-gradient(left,#f79fde, #e7c6de);
-    background-color: #f79fde;padding-top: 0.2%;}
+    background-color: #f79fde;}
 .Con-header{
 
     color: #f1f1f1;
@@ -216,6 +227,52 @@ border-radius: 0.7em;
 }
 
 
+@media (min-width:992px){
+    .Education{    background: -webkit-linear-gradient(left, #d1bdcb, #9c8897);}
+    .EduHaeader{text-shadow: -0.03em 0em 0.1em #835e7a;
+        color:#493e48;
+       ;}
+    .container-fluid{width: 97%;}
+    .MyName , .EduHaeader{font-size: 5em;}
+    .Contact{height: 33em;}
+    .Con-header{    font-size: 3em;}
+    .Contact{padding-top: 0.2%;}
+    }
+    
+    @media (max-width:575px){
+    .project .project-card{width: 33.3333%; display: block; margin:7.5% 33.3333%;height: 12em;}
+    .Contact{height: auto;padding: 5%;}
+    .Contact>.row>div>a{box-shadow: 0em 0em 0em #835e7a00;background-color: transparent;width: 10%;}
+    .Contact>.row>div{display: inline;width: 20%;}
+    .Contact>.row>div>a:hover{background-color: #835e7a00;}
+    .Contact>.row>div>a>span{display: none;}
+    .Contact>.row>div>a{font-size: 2em;}
+    .MyName , .EduHaeader , .ProHeader{font-size: 2.5em;}
+    
+    }
+    @media (min-width:1200){
+    .EduHaeader{color: #f79fde;}
+    
+    }
+    @media (min-width:576px) and (max-width:991px){
+        .EduHaeader , .MyName , .ProHeader{font-size:4em; text-align: center;}
+        .container-fluid{width: 100%;}
+        .WD-text ,.Con-header,.P-University{font-size: 2em;}
+        .project-card div{font-size: 1em;}
+        .SectionMyName{height: 40em;}
+        #scroll-top{padding: 0.1em 0.2em;}
+        .Education{
+            height: 30em;
+            background-color: transparent;
+            color: #f79fde;
+            text-shadow: -0.03em 0em 0.1em rgb(131, 94, 122);
+        }
+        .Contact{padding: 2%;}
+        
+        .Education h3{color: #f79fde;text-shadow: -0.03em 0em 0.1em #835e7a;}
+                 .P-Eduaction{font-size: 1.6em;}         
+        }
+ 
 /*-----------end contact --------------*/
 /*====================================================================================================================================*/
 /*===================================================================todo==============================================================*/
@@ -223,60 +280,9 @@ border-radius: 0.7em;
 
 
 
-/*-------------footer -----------------------*/
-
-/*--xs screen--*/
-
-@media (min-width:992px){
-.Education{    background: -webkit-linear-gradient(left, #d1bdcb, #9c8897);}
-.EduHaeader{text-shadow: -0.03em 0em 0.1em #835e7a;
-    color:#493e48;
-   ;}
-.container-fluid{width: 97%;}
-.MyName , .EduHaeader{font-size: 5em;}
-.Contact{height: 33em;}
-.Con-header{    font-size: 3em;}
-}
-
-@media (max-width:575px){
-.project .project-card{width: 33.3333%; display: block; margin:7.5% 33.3333%;height: 12em;}
-.Contact{height: auto;padding: 4%;}
-.Contact>.row>div>a{box-shadow: 0em 0em 0em #835e7a00;background-color: transparent;width: 10%;}
-.Contact>.row>div{display: inline;width: 20%;}
-.Contact>.row>div>a:hover{background-color: #835e7a00;}
-.Contact>.row>div>a>span{display: none;}
-.Contact>.row>div>a{font-size: 2em;}
-.MyName , .EduHaeader , .ProHeader{font-size: 2.5em;}
-
-}
-@media (min-width:1200){
-.EduHaeader{color: #f79fde;}
-
-}
-@media (min-width:576px) and (max-width:991px){
-    .EduHaeader , .MyName , .ProHeader{font-size:4em; text-align: center;}
-    .container-fluid{width: 100%;}
-    .WD-text ,.Con-header,.P-University{font-size: 2em;}
-    .project-card div{font-size: 1em;}
-    .SectionMyName{height: 40em;}
-    #scroll-top{padding: 0.3em 0.5em;}
-    .Education{
-        height: 30em;
-        background-color: transparent;
-        color: #f79fde;
-        text-shadow: -0.03em 0em 0.1em rgb(131, 94, 122);
-    }
-    .Education h3{color: #f79fde;text-shadow: -0.03em 0em 0.1em #835e7a;}
-             .P-Eduaction{font-size: 1.6em;}         
-    }
-    
-@media (min-width:767px){
-
-}
-/*--------------end footer -------------*/
 .list-todo{
-    background-color: #352c34;
-   background-image: url(../images/pexels-anna-shvets-4315828.jpg);
+    background-color: #f79fde;
+  /* background-image: url(../images/pexels-anna-shvets-4315828.jpg);*/
     padding: 3%;
 box-sizing: border-box;
 box-shadow:0em 0em 1em #352c34 ;
@@ -315,61 +321,22 @@ color: #352c34;
 .btn-purple{background-color: #ca299a;color: #f79fde;}
 .btn-purple:hover{color: #f1f1f1;}
 .btn-purple:active{border:0.1em  inset #ca299a;background-color: #fa0cb7;}
-/*-------------------nice card-------------
-body {
-    text-align: center;
-    padding: 30px;
-    background: #f8f4f2;
-    font-family: Arial;
-  }
-  
-  .a-box {
-    display: inline-block;
-    width: 240px;
-    text-align: center;
-  }
-  
-  .img-container {
-      height: 230px;
-      width: 200px;
-      overflow: hidden;
-      border-radius: 0px 0px 20px 20px;
-      display: inline-block;
-  }
-  
-  .img-container img {
-      transform: skew(0deg, -13deg);
-      height: 250px;
-      margin: -35px 0px 0px -70px;
-  }
-  
-  .inner-skew {
-      display: inline-block;
-      border-radius: 20px;
-      overflow: hidden;
-      padding: 0px;
-      transform: skew(0deg, 13deg);
-      font-size: 0px;
-      margin: 30px 0px 0px 0px;
-      background: #c8c2c2;
-      height: 250px;
-      width: 200px;
-  }
-  
-  .text-container {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    padding: 120px 20px 20px 20px;
-    border-radius: 20px;
-    background: #fff;
-    margin: -120px 0px 0px 0px;
-    line-height: 19px;
-    font-size: 14px;
-  }
-  
-  .text-container h3 {
-    margin: 20px 0px 10px 0px;
-    color: #04bcff;
-    font-size: 18px;
-  }
-  ------------------------------------------*/
-  
+/*====================================================================================================================================*/
+/*===================================================================Coming soon==============================================================*/
+/*=====================================================================================================================================*/
+.comingSoonBody{overflow: hidden;}
+.coming-soon i{font-size: 5em;}
+.coming-soon {
+    padding-top:7%;
+    height: 13em;
+    overflow: hidden;
+    color: #d1bdcb;
+    font-size: 5em;
+    text-shadow: 0em 0em 0.1em #835e7a;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
+background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}

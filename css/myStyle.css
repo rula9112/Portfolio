@@ -343,12 +343,7 @@ color: #352c34;
 /*===================================================================Coming soon==============================================================*/
 /*=====================================================================================================================================*/
 .comingSoonBody{overflow: hidden;}
-.coming-soon i{font-size: 5em; animation-name: upDown;
-    animation-duration: 2s;
-    animation-direction: alternate; animation-iteration-count:infinite ;}
-    @keyframes upDown {
-      0%{margin-left: 5%;}
-      25%{margin-right:10%;}
+.coming-soon i{font-size: 5em;
       }
 .coming-soon {
     position: relative;

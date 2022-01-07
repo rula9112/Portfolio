@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>index</title>
-         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="css/myStyle.css">
       <link rel="stylesheet" href="css/animate.css">
@@ -19,23 +19,45 @@
     <body>
       <div class="container-fluid">
         <header>
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="#">Rula</a>
-             
-              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#Education">Education</a>
-                  <a class="nav-link" href="#ProLink">Project</a>
-                  <a class="nav-link " href="#Conect">Contact</a>
+          <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a href="index.html" class="pull-left visible-md visible-lg">
+                  <div id="logo-img"></div>
+                </a>
+      
+                <div class="navbar-brand">
+                  <a href="index.html"></a> 
                 </div>
+      
+                <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
               </div>
-         
-          </nav>
-          
-       
+              
+              <div id="collapsable-nav" class="collapse navbar-collapse">
+                 <ul id="nav-list" class="nav navbar-nav navbar-right">
+                 
+                  <li>
+                    <a href="#Education">
+                     <br class="hidden-xs"> Education</a>
+                  </li>
+                  <li>
+                    <a href="#ProLink">
+                     <br class="hidden-xs"> Project</a>
+                  </li>
+                  <li>
+                    <a href="#Conect">
+                      <br class="hidden-xs"> Contact</a>
+                  </li>
+                  
+                </ul><!-- #nav-list -->
+              </div><!-- .collapse .navbar-collapse -->
+            </div><!-- .container -->
+          </nav><!-- #header-nav -->
       </header>
         <section class="SectionMyName">
   
@@ -51,7 +73,7 @@
   
   <section class="Education ">
     <a id="Education"></a>
-<h3 class="EduHaeader animate__animated animate__flipInX wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="60" data-wow-iteration="1"> Education<i class="fa fa-book hidden-xs" style="margin-left: 2%;"></i></span></h3>
+<h3 class="EduHaeader animate__animated animate__flipInX wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1"> Education<i class="fa fa-book hidden-xs" style="margin-left: 2%;"></i></span></h3>
 <div class="row">
   <div class="col-md-2 col-xs-1"></div>
 <div class="Ed-Div col-md-8 col-xs-10 wow  animate__animated animate__bounceInUp"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="65" data-wow-iteration="1">
@@ -66,21 +88,20 @@
   </section>
   <section class="project">
     <a id="ProLink"></a>
-    <h3 class="ProHeader  animate__animated animate__flipInX wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="60" data-wow-iteration="1">Project</h3>
+    <h3 class="ProHeader  animate__animated animate__flipInX wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1">Project</h3>
    
     <div class="row"> 
- 
-  <div class="col-offset-2"></div>
-      <div class=" project-card  col-xs-3 animate__animated animate__pulse wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="60" data-wow-iteration="1"><a href="pages/coming soon.html">
+ <div class="col-xs-1"></div>
+  
+      <div class=" project-card   col-4 col-xs-4 animate__animated animate__pulse wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1"><a href="pages/coming soon.html">
         
        <img src="images/todo list lg.jpg">
         <div class="hidden-xs hidden-sm"><span class="span-pro">Project 1</span></div>
-        <span class="hidden-md hidden-lg">Project </span></a>
+        <span class="hidden-md hidden-lg">Project 1</span></a>
       </div>
-    
-  <div class="col-offset-1"></div>
+    <div class="col-xs-2"></div>
 
-      <div class=" project-card   col-4 offset-2 col-xs-3 animate__animated animate__pulse wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="60" data-wow-iteration="1"><a href="pages/coming soon.html">
+      <div class=" project-card   col-4 col-xs-4  animate__animated animate__pulse wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1"><a href="pages/coming soon.html">
         <img src="images/quiz-victor-pink.jpg"> 
         <div class="hidden-xs hidden-sm"><span>Project 2</span></div>
         <span class="hidden-md hidden-lg">Project 2</span></a>
@@ -89,17 +110,17 @@
     </section>
   <section class="Contact">
     <a id="Conect"></a>
-      <h3 class="Con-header animate__animated animate__bounceInLeft wow" data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="40" data-wow-iteration="1">You can contact with me in</h3>
+      <h3 class="Con-header animate__animated animate__bounceInLeft wow" data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1">You can contact with me in</h3>
         <div class="row">
-          <div class="col-xs-2 col-sm-2 col-md-2 offset-2 animate__animated animate__tada wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1"><a href="mailto:rula.hamed.2000@gmail.com? subject text">
+          <div class="col-xs-3 margin-col   animate__animated animate__tada wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="2" data-wow-iteration="1"><a href="mailto:rula.hamed.2000@gmail.com? subject text">
             <i class="fa fa-google " ></i><br>
             <span>Gamil</span></a></div>
-            <div class="col-xs-2  col-sm-2 col-md-2 offset-1 animate__animated animate__tada wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1"><a href="#">
-              <i class="fa fa-github"></i><br>
-              <span>Github</span></a></div>
-              <div class="col-xs-2 col-sm-2  col-md-2  offset-1 animate__animated animate__tada wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="20" data-wow-iteration="1"><a href="#">
-                <i class="fa fa-linkedin"></i><br>
-                <span>Linkedin</span></a></div>
+            <div class="col-xs-3   col-offset-1 animate__animated animate__tada wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="2" data-wow-iteration="1"><a href="https://www.messenger.com/t/100009984458229">
+              <i class="fa fa-facebook-square"></i><br>
+              <span>facebook</span></a></div>
+              <div class="col-xs-3  col-offset-1 animate__animated animate__tada wow"  data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="2" data-wow-iteration="1"><a href="https://telegram.me/rulahamed2000">
+                <i class="fa fa-telegram"></i><br>
+                <span>telegram</span></a></div>
 
         </div>
     </div>
@@ -120,7 +141,7 @@
       </div>
      <script src="js/jQuery.js"></script>
      <script src="js/popperjs.js"></script>
-     <script src="js/bootstrap-4.0.0.js"></script>
+     <script src="js/bootstrap.js"></script>
      <script src="js/wow.min.js"></script>
      
      <script src="js/newJS.js"></script>
